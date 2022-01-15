@@ -1,0 +1,123 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* ---------------------- 
+  variable start
+ ------------------------- */
+:root {
+  --main-color: #3a3a3a;
+}
+
+/* ---------------------- 
+  Utility classes start
+ ------------------------- */
+
+a {
+  text-decoration: none;
+}
+
+/* Desktop container  */
+@media only screen and (min-width: 991px) and (max-width: 1536px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 7%;
+    padding-right: 7%;
+    margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+/* Tablet container  */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+/* Mobile container  */
+@media only screen and (min-width: 0px) and (max-width: 688px) {
+  .container {
+    max-width: 1536px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: auto;
+    margin-left: auto;
+  }
+}
+
+/* --------------------- 
+  Utility classes end 
+ --------------------- */
+/* ----------------------- 
+  all section css Start
+ ------------------------ */
+
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 70px;
+  border: 1px solid red;
+}
+.nav-left > a > span {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--main-color);
+}
+.nav-rignt > ul {
+  display: flex;
+}
+.nav-rignt li {
+  list-style: none;
+  margin-left: 25px;
+  color: var(--main-color);
+}
+/* navbar end */
+.hero-section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+}
+/* hero start*/
+
+/* navbar end */
+/* ----------------------- 
+  all section css End
+ ------------------------ */
+/* ----------------------- 
+  Media Queries Start
+ ------------------------ */
+/* Desktop start */
+@media only screen and (min-width: 991px) and (max-width: 1536px) {
+}
+
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+}
+
+/* Mobile Devices */
+@media only screen and (min-width: 0px) and (max-width: 688px) {
+  .nav-rignt li:not(:last-child) {
+    display: none;
+  }
+/* hero start */
+.hero-section{
+  display: grid;
+  grid-template-columns: 1fr ;
+  grid-gap: 20px;
+}
+
+}
+/* ----------------------- 
+  Media Queries End
+ ------------------------ */
